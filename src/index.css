@@ -29,3 +29,19 @@ body,
   overflow-y: auto; /* Permite rolar a tela no celular */
   -webkit-overflow-scrolling: touch; /* Deixa a rolagem suave no iPhone */
 }
+/* Força o empty state a clarear o texto e ocupar espaço visível */
+.empty-state {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  color: #ffffff !important; /* Força o texto a ficar branco */
+  text-align: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+.empty-state * {
+  color: #ffffff !important; /* Força ícones e subtextos internos a aparecerem */
+}
